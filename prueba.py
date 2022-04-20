@@ -10,11 +10,11 @@ height=st.slider('How tall are you in cms?', 0, 200, 10)
 
 
 if st.button("Save it"):
-    size.df=size.append({"height": height,"weight":weight},ignore_index=True)
+    size.df=size.append({"height": height,"weight":weight})
     st.text("Updated dataframe")
     size=size.df
     st.dataframe(size)
                                            
                                             
   
-st.line_chart(size)
+st.bar_chart(size)
