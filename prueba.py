@@ -6,7 +6,7 @@ st.write(df)
 weight=st.slider('How fat are you in kgs?', 0, 130, 10)
 height=st.slider('How tall are you in kgs?', 0, 200, 10)
 columnnames=["height","weight"]
-size=pd.dataframe(columns=columnnames)
+size=pd.DataFrame(columns=columnnames)
 session_state = SessionState.get(df=size)
 
 if st.button("Save it"):
