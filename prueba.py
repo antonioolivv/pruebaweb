@@ -12,7 +12,7 @@ if st.button("Save it"):
     size.df=size.append({"height": height,"weight":weight},ignore_index=True)
     st.text("Updated dataframe")
     size=size.df
-    st.dataframe(size.df)
+    st.dataframe(size)
                                            
                                             
   
