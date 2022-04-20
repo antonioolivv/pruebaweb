@@ -9,11 +9,11 @@ for i in range(5):
 
     weight=st.slider('How fat are you in kgs?', 0, 130, 10)
     height=st.slider('How tall are you in cms?', 0, 200, 10)
-        if st.button("Save it"):
-            size.df=size.append({"height": height,"weight":weight},ignore_index=True)
-            st.text("Updated dataframe")
-            size=size.df
-            st.dataframe(size)
+    if st.button("Save it"):
+        size.df=size.append({"height": height,"weight":weight},ignore_index=True)
+        st.text("Updated dataframe")
+        size=size.df
+        st.dataframe(size)
  
                                            
                                             
