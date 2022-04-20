@@ -9,7 +9,7 @@ size=pd.dataframe({"height":[],"weight":[]})
 session_state = SessionState.get(df=size)
 
 if st.button("Save it"):
-  session_state.df=session_state.df.append({"height": height,"weight":weight}ignore_index=True)
+  session_state.df=session_state.df.append({"height": height,"weight":weight},ignore_index=True)
   st.text("Updated dataframe")
   st.dataframe(session_state.df)
                                            
