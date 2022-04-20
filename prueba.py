@@ -9,7 +9,7 @@ columnnames=["height","weight"]
 size=pd.DataFrame(columns=columnnames)
 
 if st.button("Save it"):
-  size.df=size.append({"height": height,"weight":weight},ignore_index=True)
+  size=size.append({"height": height,"weight":weight},ignore_index=True)
   st.text("Updated dataframe")
   st.dataframe(size.df)
 
