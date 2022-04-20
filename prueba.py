@@ -10,7 +10,8 @@ height=st.slider('How tall are you in cms?', 0, 200, 10)
 
 
 if st.button("Save it"):
-    size.df=size.append({"height": height,"weight":weight},ignore_index=True)
+    df1=dataframe({"height":height,"weight":weight})
+    size.df=size.append(df1)
     st.text("Updated dataframe")
     size=size.df
     st.dataframe(size)
