@@ -17,4 +17,4 @@ if st.button("Save it"):
                                            
                                             
   
-st.bar_chart(size)
+st.line_chart(size)
