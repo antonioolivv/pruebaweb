@@ -5,7 +5,7 @@ df = pd.DataFrame({"one": [1, 2, 3], "two": [4, 5, 6], "three": [7, 8, 9]})
 st.write(df)
 weight=st.slider('How fat are you in kgs?', 0, 130, 10)
 height=st.slider('How tall are you in kgs?', 0, 200, 10)
-size=dataframe("height":[],"weight":[])
+size=pd.dataframe("height":[],"weight":[])
 session_state = SessionState.get(df=size)
 
 if st.button("Save it"):
