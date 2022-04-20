@@ -7,10 +7,9 @@ weight=st.slider('How fat are you in kgs?', 0, 130, 10)
 height=st.slider('How tall are you in kgs?', 0, 200, 10)
 columnnames=["height","weight"]
 size=pd.DataFrame(columns=columnnames)
-session_state = SessionState.get(df=size)
 
 if st.button("Save it"):
-  session_state.df=session_state.df.append({"height": height,"weight":weight},ignore_index=True)
+  size.df=size.df.append({"height": height,"weight":weight},ignore_index=True)
   st.text("Updated dataframe")
   st.dataframe(session_state.df)
                                            
