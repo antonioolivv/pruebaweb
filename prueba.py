@@ -8,7 +8,7 @@ height=st.slider('How tall are you in cms?', 0, 200, 10)
 columnnames=["height","weight"]
 size=pd.DataFrame(columns=columnnames)
 
-while len(df.index)>10:
+
   if st.button("Save it"):
     size.df=size.append({"height": height,"weight":weight},ignore_index=True)
     st.text("Updated dataframe")
