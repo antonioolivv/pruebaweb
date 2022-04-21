@@ -18,4 +18,4 @@ st.bar_chart(size)
 bmi=weight*10000/height**2
 
 st.header('Are you overweight?')
-st.write(bmi)                                            
+st.write("Your body mass index is",bmi)                                            
