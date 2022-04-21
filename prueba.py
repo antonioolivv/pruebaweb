@@ -15,6 +15,6 @@ if st.button("Save it"):
     st.dataframe(size)
     
    
-bmi=height*10/weight**2
+bmi=height*1000/weight**2
 st.write(bmi)                                            
 st.bar_chart(size)
