@@ -14,7 +14,8 @@ if st.button("Save it"):
     size=size.df
     st.dataframe(size)
     
-   
-bmi=weight*10000/height**2
-st.write(bmi)                                            
 st.bar_chart(size)
+bmi=weight*10000/height**2
+
+st.header('Are you overweight?')
+st.write(bmi)                                            
